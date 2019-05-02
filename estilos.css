@@ -64,3 +64,9 @@ body {
   color: cornflowerblue;
   text-decoration: underline;
 }
+
+#demo {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}

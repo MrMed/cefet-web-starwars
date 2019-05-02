@@ -9,11 +9,21 @@
   <body>
     <nav id="movies">
       <ul>
-        <li>Episode I</li>
+        <!-- <li>Episode I</li>
         <li>Episode II</li>
-        <li>Episode ...</li>
+        <li>Episode ...</li> -->
       </ul>
     </nav>
+
+    <li>
+      <audio id="demo" src="https://ia801703.us.archive.org/15/items/StarWarsThemeSongByJohnWilliams/Star%20Wars%20Theme%20Song%20By%20John%20Williams.mp3" preload="auto" controls autoplay loop>
+        <p>Your browser does not support the audio element.</p>
+        <button onclick="document.getElementById('demo').play()">Reproduzir o áudio</button>
+        <button onclick="document.getElementById('demo').pause()">Pausar o áudio</button>
+        <button onclick="document.getElementById('demo').volume+=0.1">Aumentar o volume</button>
+        <button onclick="document.getElementById('demo').volume-=0.1">Diminuir o volume</button>
+      </audio>
+    </li>
 
     <div class="container">
       <div class="flow">
@@ -46,6 +56,7 @@
       </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script>
     <script src="starwars.js" charset="utf-8"></script>
     <script src="restart-animation.js" charset="utf-8"></script>
   </body>
